@@ -14,4 +14,7 @@
 		<Using Include="DocumentFormat.OpenXml.Packaging" />
 		<Using Include="TemplateEngine.Docx" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Template\" />
+	</ItemGroup>
 </Project>

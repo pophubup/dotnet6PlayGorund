@@ -28,10 +28,14 @@ namespace zNpgsqlClient
             modelBuilder.Entity<Stock>().Property(g => g.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<Type>().Property(g => g.Id).ValueGeneratedOnAdd();
 
-            modelBuilder.Entity<Product>().HasOne(g => g.Category);
+            modelBuilder.Entity<Product>().HasOne(g => g.Category)
+                .WithMany(g=>g.Product)
+                .HasForeignKey(x=>x.CategoryForeignKey);
+
             modelBuilder.Entity<Product>().HasMany(g => g.Stock);
             modelBuilder.Entity<Product>().HasMany(g => g.Event);
 
+      
             modelBuilder.Entity<Event>().HasOne(g => g.Type);
 
             base.OnModelCreating(modelBuilder);
