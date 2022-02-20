@@ -27,7 +27,9 @@ namespace zNpgsqlClient
             modelBuilder.Entity<Event>().Property(g => g.Id).ValueGeneratedOnAdd(); 
             modelBuilder.Entity<Stock>().Property(g => g.Id).ValueGeneratedOnAdd();
             modelBuilder.Entity<Type>().Property(g => g.Id).ValueGeneratedOnAdd();
+            #region 測試
 
+            #endregion
             modelBuilder.Entity<Product>().HasOne(g => g.Category)
                 .WithMany(g=>g.Product)
                 .HasForeignKey(x=>x.CategoryForeignKey);
