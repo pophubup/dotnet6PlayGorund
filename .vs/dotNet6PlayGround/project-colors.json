@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f59f1bc0-d85f-4972-86b7-be6a67f3f9f9": {
+      "ProjectGuid": "f59f1bc0-d85f-4972-86b7-be6a67f3f9f9",
+      "DisplayName": "zNpgsqlClient",
+      "ColorIndex": 0
+    },
+    "004faa3f-0905-4712-8fba-c81f357793ad": {
+      "ProjectGuid": "004faa3f-0905-4712-8fba-c81f357793ad",
+      "DisplayName": "RestAPIs",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
